@@ -88,3 +88,148 @@ body {
 .game-info {
   margin-left: 20px;
 }
+
+
+
+
+
+
+/* work on the styles below */
+
+/* variables */
+
+:root{
+  /* Primary colors */
+  --toamto: hsl(4, 100%, 67%);
+  /* Neutral colors */
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  /* typography */
+  /* Body Copy */
+  --Font-size-paragraph: 16px;
+  /* Font */
+  --font-Family: 'Roboto', sans-serif;
+  --font-weights-mobile: 400;
+  --font-weight-desktop: 700;
+}
+
+/* global style */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Charcoal-Grey);
+  height: 100vh;
+}
+
+.article-container{
+  background-color: var(--White);
+  display: flex;
+  width: 55%;
+  border-radius: 10px;
+  font-family: var(--font-Family);
+  font-weight: 700;
+}
+
+@media (max-width: 925px){
+  .article-container{
+      width: 86%;
+      font-size: 15px;
+  }
+}
+
+
+
+.content-container{
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+#header{
+  margin-bottom: 10px;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+#paragraph{
+  margin-bottom: 10px;
+  font-size: var(--Font-size-paragraph);
+  margin-bottom: 15px;
+}
+
+.list-items{
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.list{
+  margin-bottom: 10px;
+}
+
+.li-icon{
+  width: 15px;
+}
+
+#body-img{
+  width: 16rem;
+  margin: 1rem;
+}
+
+.email{
+  font-size: 12px;
+}
+
+.email-input{
+  width: 90%;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit-btn{
+  margin-top: 10px;
+  background-color: var(--toamto);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  width: 90%;
+  cursor: pointer;
+}
+
+#submit-btn:hover{
+background-color: var(--dark-slate-grey);
+}
+
+@media (max-width: 644px){
+  .article-container{
+      width: 94%;
+      font-size: 12px;
+  }
+  #header{
+      font-size: 25px;
+  }
+  #paragraph{
+      font-size: 12px;
+  }
+  #submit-btn{
+      width: 90%;
+      font-size: 11px;
+  }
+  
+  #body-img{
+  width: 12rem;
+  }
+  .email{
+      font-size: 10px;
+  }
+}
